@@ -1,0 +1,34 @@
+.skill-badges-container {
+  position: relative;
+}
+
+.skill-badges-container::before,
+.skill-badges-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.skill-badges-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.skill-badges-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.skill-badges-container-dark::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0));
+}
+
+.skill-badges-container-dark::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0));
+}
