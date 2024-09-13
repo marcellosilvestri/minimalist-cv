@@ -7,22 +7,25 @@ interface CustomLinkProps {
   title?: string;
   children: React.ReactNode;
   className?: string;
+  hideIcon?: boolean;
 }
 
-function CustomLink({ href, title, children, className }: CustomLinkProps) {
+function CustomLink({ href, title, children, className, hideIcon = false }: CustomLinkProps) {
   const isExternal = href.startsWith("http") || href.startsWith("https");
 
   const linkProps = {
     href,
     title,
-    className: `underline text-blue-500 dark:text-orange-400 ${isExternal ? "inline-flex items-center gap-1" : ""} ${className || ""}`.trim(),
+    className: `underline text-blue-500 dark:text-orange-400 hover:text-blue-600 dark:hover:text-orange-500 ${
+      isExternal ? "inline-flex items-center gap-1" : ""
+    } ${className || ""}`.trim(),
     ...(isExternal && { target: "_blank", rel: "noopener noreferrer" }),
   };
 
   return (
     <Link {...linkProps}>
       {children}
-      {isExternal && <ExternalLinkIcon aria-hidden="true" />}
+      {isExternal && !hideIcon && <ExternalLinkIcon aria-hidden="true" />}
     </Link>
   );
 }
