@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./custom.css";
+import { CSPostHogProvider } from "./providers";
 
 export const metadata: Metadata = {
   title: "Marcello Silvestri",
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
       <body className="antialiased tracking-tighter font-sans text-slate-900 dark:text-slate-50 bg-white dark:bg-slate-900 flex flex-col min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <CSPostHogProvider>{children}</CSPostHogProvider>
         </ThemeProvider>
       </body>
     </html>
