@@ -72,7 +72,7 @@ export default function Home() {
                   <li>
                     {" "}
                     I have a blog at{" "}
-                    <CustomLink href="https://silvestri.blog" title="Ichimai">
+                    <CustomLink href="https://silvestri.blog" title="Marcello Silvestri's Blog">
                       silvestri.blog
                     </CustomLink>
                     , which I use to share my thoughts and ideas.
