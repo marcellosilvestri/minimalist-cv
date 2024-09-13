@@ -55,14 +55,20 @@ export function SkillBadges() {
       <div className={`skill-badges-container ${themeClass}`}>
         <motion.div className="flex gap-2 mb-2 whitespace-nowrap" variants={rightToLeftVariants} animate="animate">
           {[...skills1, ...skills1, ...skills1, ...skills1, ...skills1, ...skills1, ...skills1, ...skills1, ...skills1, ...skills1].map((skill, index) => (
-            <Badge key={`${skill}-${index}`} variant="outline" className="whitespace-nowrap">
+            <Badge
+              key={`${skill}-${index}`}
+              variant="outline"
+              className="whitespace-nowrap transition-colors hover:bg-slate-900 hover:text-slate-50 dark:hover:bg-slate-50 dark:hover:text-slate-900 cursor-default">
               {skill}
             </Badge>
           ))}
         </motion.div>
         <motion.div className="flex gap-2 whitespace-nowrap" variants={leftToRightVariants} animate="animate">
           {[...skills2, ...skills2, ...skills2, ...skills2, ...skills2, ...skills2, ...skills2, ...skills2, ...skills2, ...skills2].map((skill, index) => (
-            <Badge key={`${skill}-${index}`} variant="outline" className="whitespace-nowrap">
+            <Badge
+              key={`${skill}-${index}`}
+              variant="outline"
+              className="whitespace-nowrap transition-colors hover:bg-slate-900 hover:text-slate-50 dark:hover:bg-slate-50 dark:hover:text-slate-900 cursor-default">
               {skill}
             </Badge>
           ))}
