@@ -74,12 +74,10 @@ export default function Home() {
                 <h2 className="text-lg font-semibold text-slate-700 dark:text-slate-50">Let's talk</h2>
                 <p className="text-slate-500 dark:text-slate-400">
                   If you'd like to have a chat, you can{" "}
-                  <CustomLink
-                    href="https://cal.com/silvestri/meeting?user=silvestri&duration=15&date=2024-09-24&month=2024-09"
-                    title="Book a meeting with Marcello Silvestri">
-                    book a meeting with me
-                  </CustomLink>
-                  .
+                  <CustomLink href="https://cal.com/silvestri/meeting/" title="Book a meeting with Marcello Silvestri">
+                    book a meeting
+                  </CustomLink>{" "}
+                  with me.
                 </p>
               </div>
             </div>
