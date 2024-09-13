@@ -1,4 +1,4 @@
-import { TwitterLogoIcon, GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { TwitterLogoIcon, GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon, CalendarIcon } from "@radix-ui/react-icons";
 import CustomLink from "./customLink";
 
 export default function Footer() {
@@ -16,6 +16,9 @@ export default function Footer() {
         </CustomLink>
         <CustomLink href="https://www.instagram.com/heyitsmarcello/" hideIcon={true}>
           <InstagramLogoIcon className="w-5 h-5" />
+        </CustomLink>
+        <CustomLink href="https://cal.com/silvestri/meeting/" hideIcon={true}>
+          <CalendarIcon className="w-5 h-5" />
         </CustomLink>
       </div>
       <span className="font-semibold">2024 — Marcello Silvestri. All rights reserved.</span>
