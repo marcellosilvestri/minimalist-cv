@@ -3,6 +3,7 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "next/image";
+import CustomLink from "../components/CustomLink";
 import { motion } from "framer-motion";
 import { LivePing } from "../components/livePing";
 import { SkillBadges } from "../components/skillBadges";
@@ -23,7 +24,12 @@ export default function CV() {
                 <h2 className="text-lg text-slate-500 dark:text-slate-400">Full Stack Web Developer</h2>
                 <div className="flex items-center gap-2">
                   <LivePing status="active" />
-                  <span className="text-slate-500 dark:text-slate-400 text-sm">Currently available for hire</span>
+                  <span className="text-slate-500 dark:text-slate-400 text-sm">
+                    Currently{" "}
+                    <CustomLink href="https://cal.com/silvestri/meeting?user=silvestri&duration=15&date=2024-09-24&month=2024-09">
+                      available for hire
+                    </CustomLink>
+                  </span>
                 </div>
               </div>
             </div>
@@ -50,58 +56,84 @@ export default function CV() {
             <div className="space-y-4" id="work-experience">
               <h2 className="text-lg font-bold text-slate-900 dark:text-slate-50">Notable work experience</h2>
               <div className="space-y-8">
-                <div className="flex flex-col md:flex-row">
-                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2023 — 2024</span>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2023 — Today</span>
                   <div className="md:w-4/5 space-y-2">
-                    <h3 className="text-sm text-slate-600 dark:text-slate-300 mt-2 md:mt-0">Lega Calcio</h3>
-                    <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Fractional CTO, Tech Lead</h4>
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/serie-a.svg" width={35} height={35} alt="Serie A logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Serie A</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Fractional CTO, Project Lead</h4>
+                      </div>
+                    </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the initial phase of a comprehensive refactoring project for the Italian Football League’s suite of applications (Lega Calcio, Serie
-                      A, Serie B). My job was to coordinate cross-functional teams until an internal CTO could assume control.
+                      Led the kick-off of a refactoring project for the Italian Football League’s applications through an Italian startup. Initially coordinated
+                      a small team of developers and product managers until an internal CTO took over, while continuing to provide consulting services to the
+                      startup.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row">
-                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — 2024</span>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — Today</span>
                   <div className="md:w-4/5 space-y-2">
-                    <h3 className="text-sm text-slate-600 dark:text-slate-300 mt-2 md:mt-0">Toyota Malta</h3>
-                    <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/toyota.svg" width={35} height={35} alt="Toyota logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Toyota Malta</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                      </div>
+                    </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the initial phase of a comprehensive refactoring project for the Italian Football League’s suite of applications (Lega Calcio, Serie
-                      A, Serie B). My job was to coordinate cross-functional teams until an internal CTO could assume control.
+                      Currently managing the official Toyota Malta website, serving as the primary liaison for Debono Group, the official distributor in Malta.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row">
-                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — 2024</span>
-                  <div className="w-4/5 space-y-2">
-                    <h3 className="text-sm text-slate-600 dark:text-slate-300 mt-2 md:mt-0">Toyota Malta</h3>
-                    <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2022 — 2022</span>
+                  <div className="md:w-4/5 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/planetwin.webp" width={35} height={35} alt="Planetwin365 logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Planetwin365</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Data Analyst</h4>
+                      </div>
+                    </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the initial phase of a comprehensive refactoring project for the Italian Football League’s suite of applications (Lega Calcio, Serie
-                      A, Serie B). My job was to coordinate cross-functional teams until an internal CTO could assume control.
+                      Worked with PlanetWin365, part of SKS365 group, to enhance the user experience and interface of one of their websites in preparation for
+                      the 2022 World Cup. Completed the project within a tight two-month timeframe, resulting in a lasting impact on the site’s affiliate
+                      revenue generation.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row">
-                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — 2024</span>
-                  <div className="w-4/5 space-y-2">
-                    <h3 className="text-sm text-slate-600 dark:text-slate-300 mt-2 md:mt-0">Toyota Malta</h3>
-                    <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2021 — 2021</span>
+                  <div className="md:w-4/5 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/pfizer.svg" width={35} height={35} alt="Pfizer logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Pfizer</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer</h4>
+                      </div>
+                    </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the initial phase of a comprehensive refactoring project for the Italian Football League’s suite of applications (Lega Calcio, Serie
-                      A, Serie B). My job was to coordinate cross-functional teams until an internal CTO could assume control.
+                      Led the development of a diversity and inclusivity platform, ensuring GDPR compliance and optimal UX/UI. Worked with several multinational
+                      teams, delivering the project on budget with minimal post-launch issues. Successfully decommissioned after its lifecycle completion.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row">
-                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — 2024</span>
-                  <div className="w-4/5 space-y-2">
-                    <h3 className="text-sm text-slate-600 dark:text-slate-300 mt-2 md:mt-0">Toyota Malta</h3>
-                    <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2019 — 2021</span>
+                  <div className="md:w-4/5 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/italchamind.svg" width={35} height={35} alt="Italian Chamber of Commerce in the UK logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Italian Chamber of Commerce in the UK</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                      </div>
+                    </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the initial phase of a comprehensive refactoring project for the Italian Football League’s suite of applications (Lega Calcio, Serie
-                      A, Serie B). My job was to coordinate cross-functional teams until an internal CTO could assume control.
+                      Led the development of a diversity and inclusivity platform, ensuring GDPR compliance and optimal UX/UI. Worked with several multinational
+                      teams, delivering the project on budget with minimal post-launch issues. Successfully decommissioned after its lifecycle completion.
                     </p>
                   </div>
                 </div>
