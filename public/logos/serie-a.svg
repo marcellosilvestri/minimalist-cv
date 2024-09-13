@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #1a1659;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="199.5" y1="17.7" x2="379.7" y2="17.7" gradientTransform="translate(-18.3 447.7) scale(.9 -.9)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#31ecff"/>
+      <stop offset="0" stop-color="#2de2ff"/>
+      <stop offset=".3" stop-color="#1bb2ff"/>
+      <stop offset=".5" stop-color="#0e90ff"/>
+      <stop offset=".7" stop-color="#067bff"/>
+      <stop offset=".8" stop-color="#0373ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="423.2" y1="458.1" x2="262.5" y2="16.7" gradientTransform="translate(-18.3 447.7) scale(.9 -.9)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#31ecff"/>
+      <stop offset="0" stop-color="#2de2ff"/>
+      <stop offset=".3" stop-color="#1bb2ff"/>
+      <stop offset=".5" stop-color="#0e90ff"/>
+      <stop offset=".7" stop-color="#067bff"/>
+      <stop offset=".8" stop-color="#0373ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="g915">
+        <g id="g898">
+          <g id="g896">
+            <g id="g894">
+              <polygon id="polygon873" class="cls-3" points="34.7 363 166.4 363 249.9 499.5 34.7 363"/>
+              <polygon id="polygon875" class="cls-3" points="465.3 363 333.4 363 249.9 499.5 465.3 363"/>
+              <polygon id="polygon877" class="cls-3" points="166.4 363 249.9 363 333.4 363 249.9 142.7 166.4 363"/>
+              <polygon id="polygon892" class="cls-2" points="249.9 499.5 333.4 363 166.4 363 249.9 499.5"/>
+            </g>
+          </g>
+        </g>
+        <path id="path913" class="cls-1" d="M249.9,142.7l36,95h-45.5l-30.9,82h107.5l16.3,43.3h131.9L309.3,0h-118.9L34.7,363h131.9l83.2-220.3Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
