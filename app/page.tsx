@@ -28,6 +28,10 @@ export default function Home() {
                   You can read my developer CV{" "}
                   <CustomLink href="/cv" title="Marcello Silvestri's CV">
                     here
+                  </CustomLink>{" "}
+                  and my principles{" "}
+                  <CustomLink href="/principles" title="Marcello Silvestri's CV">
+                    here
                   </CustomLink>
                   .
                 </p>
