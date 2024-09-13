@@ -32,3 +32,14 @@
   right: 0;
   background: linear-gradient(to left, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0));
 }
+
+#principles {
+  counter-reset: item;
+}
+
+#principles li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  width: 1.5em;
+  display: inline-block;
+}
