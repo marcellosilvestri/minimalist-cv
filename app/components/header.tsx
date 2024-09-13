@@ -1,4 +1,4 @@
-import CustomLink from "./CustomLink";
+import CustomLink from "./customLink";
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { ThemeToggle } from "../components/themeToggle";
 import { usePathname } from "next/navigation";

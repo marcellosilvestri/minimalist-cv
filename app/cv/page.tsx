@@ -3,7 +3,7 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "next/image";
-import CustomLink from "../components/CustomLink";
+import CustomLink from "../components/customLink";
 import { motion } from "framer-motion";
 import { LivePing } from "../components/livePing";
 import { SkillBadges } from "../components/skillBadges";
