@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
-const skills1 = ["HTML", "CSS", "PHP", "Laravel", "JavaScript", "jQuery", "React", "Next.js", "Tailwind CSS"];
-const skills2 = ["Node.js", "Express", "MongoDB", "MySQL", "Git", "Docker", "Linux", "React", "Next.js"];
+const skills1 = ["HTML", "CSS", "PHP", "Laravel", "JavaScript", "TypeScript", "jQuery", "React", "Next.js"];
+const skills2 = ["Node.js", "Supabase", "PostgreSQL", "MongoDB", "Tailwind CSS", "MySQL", "Git", "Docker", "Linux"];
 
 const rightToLeftVariants = {
   animate: {
@@ -45,7 +45,7 @@ export function SkillBadges() {
   }, []);
 
   if (!mounted) {
-    return null; // Return null on server-side and initial client-side render
+    return null;
   }
 
   const themeClass = mounted && resolvedTheme === "dark" ? "skill-badges-container-dark" : "";
