@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./custom.css";
-import { CSPostHogProvider } from "./providers";
+import { PHProvider } from "./providers";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "Marcello Silvestri",
@@ -16,6 +17,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const PostHogPageView = dynamic(() => import("./components/postHogPageView"), {
+  ssr: false,
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,11 +28,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
-      <body className="antialiased tracking-tighter font-sans text-slate-900 dark:text-slate-50 bg-white dark:bg-slate-900 flex flex-col min-h-screen">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <CSPostHogProvider>{children}</CSPostHogProvider>
-        </ThemeProvider>
-      </body>
+      <PHProvider>
+        <body className="antialiased tracking-tighter font-sans text-slate-900 dark:text-slate-50 bg-white dark:bg-slate-900 flex flex-col min-h-screen">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+            <PostHogPageView />
+            {children}
+          </ThemeProvider>
+        </body>
+      </PHProvider>
     </html>
   );
 }
