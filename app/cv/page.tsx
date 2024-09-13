@@ -14,9 +14,9 @@ export default function CV() {
   return (
     <>
       <Header />
-      <main className="flex flex-col justify-between pt-0 md:pt-8 p-8 min-h-screen">
+      <main className="flex flex-col flex-grow justify-between pt-0 md:pt-8 p-8">
         <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: "easeOut" }}>
-          <div className="max-w-[60ch] mx-auto w-full space-y-8 py-12">
+          <div className="max-w-[60ch] mx-auto w-full space-y-8 pt-12">
             <div className="flex items-center gap-4">
               <Image src="/avatar.webp" width={100} height={100} className="rounded-xl" alt="A photo of Marcello Silvestri" />
               <div className="flex flex-col gap-y-1">
@@ -67,9 +67,12 @@ export default function CV() {
                       </div>
                     </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the kick-off of a refactoring project for the Italian Football League’s applications through an Italian startup. Initially coordinated
-                      a small team of developers and product managers until an internal CTO took over, while continuing to provide consulting services to the
-                      startup.
+                      Led the kick-off of a refactoring project for the{" "}
+                      <CustomLink href="https://www.legaseriea.it/en" title="Italian Football League">
+                        Italian Football League
+                      </CustomLink>{" "}
+                      applications through an Italian startup. Initially coordinated a small team of developers and product managers until an internal CTO took
+                      over, while continuing to provide consulting services to the startup.
                     </p>
                   </div>
                 </div>
@@ -84,7 +87,11 @@ export default function CV() {
                       </div>
                     </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Currently managing the official Toyota Malta website, serving as the primary liaison for Debono Group, the official distributor in Malta.
+                      Currently managing the official{" "}
+                      <CustomLink href="https://toyota.com.mt/" title="Toyota Malta">
+                        Toyota Malta
+                      </CustomLink>{" "}
+                      website, serving as the primary liaison for Debono Group, the official distributor in Malta.
                     </p>
                   </div>
                 </div>
@@ -99,9 +106,12 @@ export default function CV() {
                       </div>
                     </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Worked with PlanetWin365, part of SKS365 group, to enhance the user experience and interface of one of their websites in preparation for
-                      the 2022 World Cup. Completed the project within a tight two-month timeframe, resulting in a lasting impact on the site’s affiliate
-                      revenue generation.
+                      Worked with PlanetWin365, part of{" "}
+                      <CustomLink href="https://sks365.com/" title="SKS365">
+                        SKS365
+                      </CustomLink>{" "}
+                      group, to enhance the user experience and interface of one of their websites in preparation for the 2022 World Cup. Completed the project
+                      within a tight two-month timeframe, resulting in a lasting impact on the site’s affiliate revenue generation.
                     </p>
                   </div>
                 </div>
@@ -116,8 +126,27 @@ export default function CV() {
                       </div>
                     </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the development of a diversity and inclusivity platform, ensuring GDPR compliance and optimal UX/UI. Worked with several multinational
-                      teams, delivering the project on budget with minimal post-launch issues. Successfully decommissioned after its lifecycle completion.
+                      Led the development of a diversity and inclusivity platform for{" "}
+                      <CustomLink href="https://www.pfizer.it/" title="Pfizer Italy">
+                        Pfizer Italy
+                      </CustomLink>
+                      , ensuring GDPR compliance and optimal UX/UI. Worked with several multinational teams, delivering the project on budget with minimal
+                      post-launch issues. Successfully decommissioned after its lifecycle completion.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col md:flex-row gap-2 md:gap-0">
+                  <span className="text-sm md:w-1/5 font-semibold text-slate-700 dark:text-slate-50">2020 — 2022</span>
+                  <div className="md:w-4/5 space-y-2">
+                    <div className="flex items-center gap-3">
+                      <Image src="/logos/kritic.svg" width={35} height={35} alt="Kritic logo" />
+                      <div>
+                        <h3 className="text-sm text-slate-600 dark:text-slate-300">Kritic</h3>
+                        <h4 className="text-md font-semibold text-slate-600 dark:text-slate-300">Developer, Tech Consultant</h4>
+                      </div>
+                    </div>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm">
+                      Developed and maintained a full-scale e-sports platform built with Laravel and deployed with Laravel Forge on DigitalOcean.
                     </p>
                   </div>
                 </div>
@@ -132,8 +161,9 @@ export default function CV() {
                       </div>
                     </div>
                     <p className="text-slate-500 dark:text-slate-400 text-sm">
-                      Led the development of a diversity and inclusivity platform, ensuring GDPR compliance and optimal UX/UI. Worked with several multinational
-                      teams, delivering the project on budget with minimal post-launch issues. Successfully decommissioned after its lifecycle completion.
+                      Developed the website of the <CustomLink href="https://www.italchamind.org.uk/">Italian Chamber of Commerce in the UK</CustomLink>,
+                      integrating an automated membership system and a custom-built private area accessible in both Italian and English. It now serves as a key
+                      communication tool for the Chamber and is regularly visited by hundreds of users monthly.
                     </p>
                   </div>
                 </div>
