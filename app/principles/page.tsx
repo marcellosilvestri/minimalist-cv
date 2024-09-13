@@ -12,7 +12,7 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: "easeOut" }}>
           <div className="max-w-[60ch] mx-auto w-full space-y-8 pt-12">
             <div className="h-[100px]"></div>
-            <div className="space-y-6" id="about-me">
+            <div className="space-y-2" id="principles">
               <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-50">Principles</h1>
               <ol id="principles" className="text-slate-500 dark:text-slate-400 space-y-3">
                 <li>Avoid all unnecessary meetings.</li>
