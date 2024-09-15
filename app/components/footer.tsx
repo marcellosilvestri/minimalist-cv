@@ -1,5 +1,6 @@
 import { TwitterLogoIcon, GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon, CalendarIcon } from "@radix-ui/react-icons";
 import CustomLink from "./customLink";
+import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
@@ -24,6 +25,12 @@ export default function Footer() {
       <span className="font-semibold">2024 — Marcello Silvestri. All rights reserved.</span>
       <br />
       Silvestri&reg; and Silvestri Consulting&reg; are registered trademarks of Silvestri Consulting Ltd.
+      <br />
+      Want a website like this? Check out my{" "}
+      <CustomLink href="https://github.com/marcellosilvestri/minimalist-cv" hideIcon={true}>
+        GitHub repository
+      </CustomLink>
+      .
     </footer>
   );
 }
