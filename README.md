@@ -1,6 +1,6 @@
 # Marcello’s Minimalist CV Website
 
-This is a minimalist CV website made with **Next.js/TailwindCSS.** You are welcome to clone this repository. If you do so, a star or a shoutout on [X/Twitter](https://x.com/) would be greatly appreciated!
+This is a minimalist CV website made with **Next.js/TailwindCSS.** You are welcome to clone this repository. If you do so, a star or a shoutout on [X/Twitter](https://x.com/shirubusutori) would be greatly appreciated!
 
 It uses [framer-motion](https://www.framer.com/motion/) for simple page transitions, [next-sitemap](https://www.npmjs.com/package/next-sitemap) for dynamic sitemaps generation, [shadcn/ui](https://ui.shadcn.com/) for certain components (such as the light/dark theme toggle) and [PostHog](https://posthog.com/) for web analytics.
 
