@@ -33,7 +33,7 @@ export default function CVClient() {
               </div>
             </div>
             <Separator />
-            <GitHubCalendar username="marcellosilvestri" weekStart={1} blockSize={7.5} hideColorLegend={true} />
+            <GitHubCalendar username={process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "marcellosilvestri"} weekStart={1} blockSize={7.5} hideColorLegend={true} />
             <div className="space-y-6">
               <div className="space-y-3" id="about-me">
                 <div className="space-y-3" id="about-me">
