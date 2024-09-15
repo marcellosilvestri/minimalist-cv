@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://silvestri.bio
+
+# Sitemaps
+Sitemap: https://silvestri.bio/sitemap.xml
