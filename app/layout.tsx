@@ -7,8 +7,11 @@ import { PHProvider } from "./providers";
 import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
-  title: "Marcello Silvestri",
-  description: "Everything you need to know about me.",
+  title: {
+    template: "%s — Marcello Silvestri",
+    default: "Marcello Silvestri",
+  },
+  description: "Everything about Marcello Silvestri.",
 };
 
 const inter = Inter({
