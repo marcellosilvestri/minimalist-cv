@@ -11,7 +11,10 @@ export const metadata: Metadata = {
     template: "%s — Marcello Silvestri",
     default: "Marcello Silvestri",
   },
-  description: "Everything about Marcello Silvestri.",
+  description: "Marcello Silvestri's website. Marcello is a part-time CTO with a background as a full stack web developer and digital marketer.",
+  alternates: {
+    canonical: process.env.SITE_URL,
+  },
 };
 
 const inter = Inter({
