@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://silvestri.bio",
+  siteUrl: process.env.SITE_URL,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   exclude: ["/icon.png"],
