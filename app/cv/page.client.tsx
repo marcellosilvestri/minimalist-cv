@@ -24,10 +24,7 @@ export default function CVClient() {
                 <div className="flex items-center gap-2">
                   <LivePing status="active" />
                   <span className="text-slate-500 dark:text-slate-400 text-sm">
-                    Currently{" "}
-                    <CustomLink href="https://cal.com/silvestri/meeting?user=silvestri&duration=15&date=2024-09-24&month=2024-09">
-                      available for hire
-                    </CustomLink>
+                    Currently <CustomLink href="https://cal.com/silvestri/meeting/">available for hire</CustomLink>
                   </span>
                 </div>
               </div>
