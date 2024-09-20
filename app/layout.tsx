@@ -41,7 +41,7 @@ export default function RootLayout({
           <PostHogPageView />
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <Header />
-            <main className="flex flex-col flex-grow justify-between pt-16 px-8">{children}</main>
+            <main className="flex flex-col flex-grow justify-between pt-16 md:pt-20 px-8">{children}</main>
             <Footer />
           </ThemeProvider>
         </body>
