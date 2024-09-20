@@ -1,3 +1,5 @@
+import Header from "@/app/components/header";
+import Footer from "@/app/components/footer";
 import { ThemeProvider } from "@/app/components/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -36,9 +38,11 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable}`} suppressHydrationWarning>
       <PHProvider>
         <body className="antialiased tracking-tighter font-sans text-slate-900 dark:text-slate-50 bg-white dark:bg-slate-900 flex flex-col min-h-screen">
+          <PostHogPageView />
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-            <PostHogPageView />
-            {children}
+            <Header />
+            <main className="flex flex-col flex-grow justify-between pt-16 px-8">{children}</main>
+            <Footer />
           </ThemeProvider>
         </body>
       </PHProvider>
