@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
   return (
-    <footer className="p-8 max-w-[350px] md:max-w-full mx-auto text-slate-500 dark:text-slate-400 text-center text-xs">
+    <footer className="pt-32 pb-8 px-8 max-w-[350px] md:max-w-full mx-auto text-slate-500 dark:text-slate-400 text-center text-xs">
       <div className="flex justify-center gap-4 mb-4">
         <CustomLink href="https://x.com/shirubusutori" hideIcon={true}>
           <TwitterLogoIcon className="w-5 h-5" />
